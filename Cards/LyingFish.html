@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Fish</title>
 </head>
-<style>
+<style type="text/css">
 
     /* first we start by making a gaming board */
     div#memory_board{
@@ -29,6 +29,16 @@
         cursor:pointer;
         text-align:center;
     }
+    /* Should contain a counter on how many cards are in the player's hand. */
+    .countboxplayer{
+        background-color: burlywood;
+        position: absolute;
+        bottom:0px;
+        width: 80px;
+        height: 80px;
+        margin: 0px auto;
+    }
+
 
 
 </style>
@@ -123,7 +133,10 @@
 
 </script>
 <body>
-<div id="memory_board"></div>
+<div style="position: relative; left: 0;top: 0;" id="memory_board">
+    <box class="countboxplayer"></box>
+</div>
+
 
 </body>
 </html>
