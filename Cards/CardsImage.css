@@ -1,0 +1,24 @@
+
+    /* first we start by making a gaming board */
+div#memory_board{
+    background: #000bff;
+    border: #ff001a 1px solid;
+    width:800px;
+    height:540px;
+    padding:25px;
+    margin:0px auto;
+}
+/* now we will make the cards */
+div#memory_board > div{
+    background: url(../Images/BackgroundCard.jpg);
+    background-size: 110px 110px;
+    border:#000 1px solid;
+    width:71px;
+    height:71px;
+    float:left;
+    margin:10px;
+    padding:20px;
+    font-size:64px;
+    cursor:pointer;
+    text-align:center;
+}
