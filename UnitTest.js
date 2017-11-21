@@ -21,10 +21,13 @@ unitTest.testLie = function (method) {
     var num1 = 3;
     var result = num1 - 1;
 
-    if (method(num1) === result){
+    var onePlayer = new player(3, 5, "Player1")
+    if (method(onePlayer.num1) === result){
         return true;
+        console.log("There lies consist")
     } else {
          return false;
+         console.log("The lies have diminished")
     }
 
 };
